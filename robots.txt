@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /auth/
+
+Sitemap: https://akhilguptahub.github.io/fexlo-public-info/sitemap.xml

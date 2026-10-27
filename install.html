@@ -5,17 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="How to install Fexlo, get started and fix common problems.">
-<title>Install and get started — Fexlo</title>
+<meta name="description" content="Install Fexlo from the Chrome Web Store, get started in a few minutes and fix common problems.">
+
+<link rel="canonical" href="https://akhilguptahub.github.io/fexlo-public-info/install.html">
+<meta property="og:url" content="https://akhilguptahub.github.io/fexlo-public-info/install.html">
+<meta property="og:site_name" content="Fexlo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Install and get started — Fexlo">
+<meta property="og:description" content="Install Fexlo from the Chrome Web Store, get started in a few minutes and fix common problems.">
+<meta property="og:image" content="https://akhilguptahub.github.io/fexlo-public-info/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/icon-128.png" type="image/png">
 <link rel="stylesheet" href="assets/site.css">
+<title>Install and get started — Fexlo</title>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="index.html">Fexlo</a><nav aria-label="Main"><a href="index.html">Home</a><a href="install.html" aria-current="page">Install & help</a><a href="sample.html">Sample preview</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></div></header>
-<main><div class="wrap">
-<h1>Install and get started</h1>
-<p>Fexlo is a Chrome extension (Manifest V3, Chrome 116 or newer). It is in <strong>Early Access</strong> and free for now; future pricing has not been announced.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/img/icon-128.png" alt="" width="32" height="32"><span>Fexlo</span><small>Made by Akhil Gupta</small></a>
+<nav class="nav" aria-label="Main"><a href="sample.html">Sample preview</a><a href="index.html#how">How it works</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+<span class="btn small is-pending" aria-disabled="true">Add to Chrome</span>
+</div></header>
+<main id="main"><div class="wrap">
+<div class="install-cta card-strong"><p class="eyebrow">Get started</p><p class="lead">Install Fexlo from the Chrome Web Store, then open it from the toolbar. The demo works before you create an account.</p><div class="cta-row"><span class="btn primary is-pending" aria-disabled="true">Add to Chrome</span><a class="btn ghost" href="sample.html">Try the sample first</a></div><p class="pending">The Chrome Web Store link is added once the official listing address is verified.</p></div>
+<article class="doc"><h1>Install and get started</h1>
+<p>Fexlo is a Chrome extension. It is in <strong>Early Access</strong> and free for now; future pricing has not been announced.</p>
 <h2>Install</h2>
-<ul><li><strong>From the Chrome Web Store:</strong> this page will link to the listing once it exists. Until then, do not install copies of Fexlo from other places.</li><li><strong>Tester build (before the listing):</strong> you will be given a ZIP and its SHA-256 checksum. Check the checksum, unzip, open <code>chrome://extensions</code>, switch on <em>Developer mode</em>, choose <em>Load unpacked</em> and select the unzipped folder. Updating = replace the folder and press the reload arrow on the Fexlo card.</li></ul>
+<ul><li><strong>From the Chrome Web Store:</strong> use the <em>Add to Chrome</em> button on this site. Install only from the official Fexlo listing linked here.</li><li><strong>Requirements:</strong> Google Chrome 116 or newer.</li><li><strong>Updating:</strong> Chrome updates the extension from the listing automatically.</li></ul>
 <h2>First use</h2>
 <ol><li>Click the Fexlo icon. You can try the <strong>demo</strong> first: it uses clearly labelled made-up data and never contacts a website.</li><li>Create an account (name, email, password). During Early Access an account may be activated <strong>without verifying your email address</strong>; Fexlo shows this plainly and does not treat the address as proof of identity.</li><li><strong>Extract one page:</strong> open a product list in Chrome, open Fexlo and choose the detected table. Review, edit, remove rows, then download CSV or JSON.</li><li><strong>Read a whole store:</strong> on a store that publishes a public catalogue, choose <em>Extract catalogue</em>. Results are saved in your Library.</li><li><strong>Bulk Fetch:</strong> paste several website links, choose which products you want from each (device type, brand, keywords, price, model/SKU, a maximum number), review, allow access for those sites in Chrome's prompt, and start. Pause, resume, stop and retry from the batch screen.</li><li><strong>Product Insights</strong> (its own tab): choose finished batches and saved catalogues and see cross-store price ranges (open any group to see the listings behind it), availability, prices worth a second look, a per-store data-quality view and what changed since an earlier capture. You can switch prices to &quot;only listings the stores say are available&quot;. It is calculated on your device and states how many listings each figure is based on.</li><li><strong>Home:</strong> the full-page workspace opens with an overview of your latest batch and recent datasets, and the next steps.</li></ol>
 <h2>Permissions Fexlo asks for</h2>
@@ -23,9 +39,15 @@
 <h2>Troubleshooting</h2>
 <ul><li><em>&quot;Blocked&quot;</em> on a site: the site refused (403), asked Fexlo to slow down (429), redirected or showed a bot check. Fexlo stops and does not try to get past it. Try later, or not at all.</li><li><em>&quot;Skipped: not a supported source&quot;</em>: the site does not publish a public Shopify-style product list.</li><li><em>&quot;Completed with warnings&quot;</em>: read the note on the row (a product limit, no match for your filters, unconfirmed completeness).</li><li><em>Password reset is unavailable</em> until email delivery is configured; the app says so instead of pretending to send a link.</li><li><em>Saved data</em> stays on your device even if the account service is unreachable; new extractions need the service to confirm access.</li></ul>
 <h2>Help</h2>
-<p>See the Support page. Please include the Fexlo version (Settings → About) and what the screen said.</p>
+<p>See the Support page. Please include the Fexlo version (Settings → About) and what the screen said.</p></article>
 </div></main>
-<footer class="site"><div class="wrap">Early Access · free for now · future pricing has not been announced · Made by Akhil Gupta</div></footer>
+<footer class="site-footer"><div class="wrap foot">
+<p class="foot-brand"><strong>Fexlo</strong> · Made by Akhil Gupta</p>
+<nav class="foot-nav" aria-label="Footer">
+<a href="install.html">Install &amp; help</a><a href="sample.html">Sample preview</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a>
+</nav>
+<p class="fine">Early Access · free for now · future pricing has not been announced. Support: <a href="mailto:akhil1998@gmail.com">akhil1998@gmail.com</a></p>
+</div></footer>
 
 </body>
 </html>

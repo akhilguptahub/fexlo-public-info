@@ -5,39 +5,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Fexlo is a Chrome extension that collects, organises, compares and exports public product-catalogue data from websites you choose. Your data stays in your browser.">
-<title>Fexlo — collect, organise and export public product catalogues</title>
+<meta name="description" content="Fexlo is a Chrome extension that extracts, collects, compares and exports public product-catalogue data from websites you choose. Your datasets stay in your browser.">
+
+<link rel="canonical" href="https://akhilguptahub.github.io/fexlo-public-info/">
+<meta property="og:url" content="https://akhilguptahub.github.io/fexlo-public-info/">
+<meta property="og:site_name" content="Fexlo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fexlo — collect, compare and export public product data">
+<meta property="og:description" content="Fexlo is a Chrome extension that extracts, collects, compares and exports public product-catalogue data from websites you choose. Your datasets stay in your browser.">
+<meta property="og:image" content="https://akhilguptahub.github.io/fexlo-public-info/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/icon-128.png" type="image/png">
 <link rel="stylesheet" href="assets/site.css">
-<meta name="google-site-verification" content="BBXklo4WTtRbkPVbNYLopD2M79CPD8dFow9ihCWFyF0" />
+<title>Fexlo — collect, compare and export public product data</title>
 </head>
 <body>
-<header class="site"><div class="wrap"><a class="brand" href="index.html">Fexlo</a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="install.html">Install & help</a><a href="sample.html">Sample preview</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav></div></header>
-<main><div class="wrap">
-<section class="hero"><span class="badge">Early Access · free for now</span>
-<h1>Collect public product catalogues, one click for many sites</h1>
-<p class="lead">Fexlo is a Chrome extension that collects, organises, compares and exports the <strong>public</strong> product-catalogue data of websites <strong>you</strong> choose. What you collect stays in your browser.</p>
-<p class="cta"><a class="btn" href="install.html">Install and get started</a> <a class="btn ghost" href="sample.html">See a sample preview</a> <a class="btn ghost" href="privacy.html">How your data is handled</a></p>
-<p class="fine">No payment required. Future pricing has not been announced.</p>
-<p class="credit">Made by Akhil Gupta</p></section>
-<ol class="steps"><li><b>1</b><span>Add store links</span></li><li><b>2</b><span>Choose what to fetch</span></li><li><b>3</b><span>Export or compare</span></li></ol>
-<div class="grid"><div class="tile"><h3>Bulk Fetch</h3><p>Paste or import several websites, choose which products you want from each, allow access once, and fetch them all with one click.</p></div><div class="tile"><h3>Yours, locally</h3><p>Products, snapshots and exports live in your browser. Only account details reach our account service.</p></div><div class="tile"><h3>Gentle and honest</h3><p>Obeys robots.txt, spaces requests, and stops when a site says no. Never solves CAPTCHAs.</p></div></div>
-<h2>What it does</h2>
-<ul>
-<li>Turns a product list on the page you are viewing into a clean table you can export.</li>
-<li>Reads a store's public catalogue (products, variants, prices as published) politely and slowly.</li>
-<li><strong>Bulk Fetch:</strong> paste or import several websites, choose which products you want from each, allow access once, and fetch them all with one click — with per-site progress, pause, resume, stop and retry.</li>
-<li>Keeps a Library on your device, compares snapshots, exports CSV or JSON.</li>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/img/icon-128.png" alt="" width="32" height="32"><span>Fexlo</span><small>Made by Akhil Gupta</small></a>
+<nav class="nav" aria-label="Main"><a href="sample.html">Sample preview</a><a href="index.html#how" aria-current="page">How it works</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+<span class="btn small is-pending" aria-disabled="true">Add to Chrome</span>
+</div></header>
+<main id="main"><div class="wrap">
+
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-copy">
+<p class="eyebrow">Early Access · free for now</p>
+<h1 id="hero-title">Turn public product catalogues into data you can actually use.</h1>
+<p class="lead">Extract product listings, collect data from supported stores, compare snapshots and export results — with control over which websites Fexlo accesses.</p>
+<div class="cta-row"><span class="btn primary is-pending" aria-disabled="true">Add to Chrome</span><a class="btn ghost" href="sample.html">Explore the sample</a></div>
+<p class="pending">The Chrome Web Store link is added once the official listing address is verified.</p>
+<p class="byline">Made by <strong>Akhil Gupta</strong> · No payment required. Future pricing has not been announced.</p>
+</div>
+<figure class="shot">
+<div class="frame"><img src="assets/img/demo-browse.png" alt="Fexlo browse view with a table of twelve made-up sample products, showing brand, category, variant count and price" width="1280" height="800" loading="eager" decoding="async"></div>
+<figcaption>Sample data only. These products and prices are made up.</figcaption>
+</figure>
+</section>
+<ul class="facts" aria-label="What makes Fexlo different">
+<li>You choose every website</li>
+<li>Your datasets stay in your browser</li>
+<li>Stops when a site refuses access</li>
 </ul>
-<h2>Honest by design</h2>
-<ul>
-<li>It obeys robots.txt and <strong>stops</strong> when a site refuses (403), asks it to slow down (429) or shows a bot check. It never solves CAPTCHAs.</li>
-<li>Each website in a batch needs <strong>your</strong> permission, asked one site at a time. Fexlo has no website access when you install it.</li>
-<li>Only your account details go to our account service. Products, website lists and filters never do. See the <a href="privacy.html">privacy policy</a>.</li>
-<li>Results are labelled truthfully: completed, completed with warnings, partial, skipped, blocked or failed.</li>
+
+<section id="how" class="section" aria-labelledby="how-title">
+<h2 id="how-title">How it works</h2>
+<ol class="steps">
+<li><span class="num" aria-hidden="true">1</span><h3>Open a supported public catalogue</h3><p>Open a product list or a store’s public catalogue in Chrome.</p></li>
+<li><span class="num" aria-hidden="true">2</span><h3>Choose what to extract</h3><p>Extract the page you are viewing, or add websites to Bulk Fetch and choose which products to keep.</p></li>
+<li><span class="num" aria-hidden="true">3</span><h3>Review results and data quality</h3><p>Every result is labelled, for example completed, partial, blocked or skipped, with notes on anything missing.</p></li>
+<li><span class="num" aria-hidden="true">4</span><h3>Save, compare and export</h3><p>Keep datasets in your Library, compare snapshots, and download CSV or JSON.</p></li>
+</ol>
+</section>
+
+<section class="section" aria-labelledby="features-title">
+<h2 id="features-title">What you can do</h2>
+<div class="cards">
+<article class="card"><h3>Extract</h3><p class="use">Look at the product list on the page you are viewing.</p><p class="outcome">A clean table of records you can review, edit and export.</p></article>
+<article class="card"><h3>Bulk Fetch</h3><p class="use">Collect one kind of product from several chosen websites in one run.</p><p class="outcome">Per-site progress with pause, resume, stop and retry. Each site reports its own result.</p></article>
+<article class="card"><h3>Library</h3><p class="use">Come back to an earlier extraction without collecting it again.</p><p class="outcome">Saved datasets stay on this device. Reopen, export or delete them.</p></article>
+<article class="card"><h3>Insights</h3><p class="use">Summarise the datasets you collected, across stores.</p><p class="outcome">Price ranges, availability and data-quality notes, calculated on your device with no AI service.</p></article>
+<article class="card"><h3>Compare</h3><p class="use">See what changed between two saved snapshots.</p><p class="outcome">Products added, removed or changed, where the data supports the comparison.</p></article>
+<article class="card"><h3>Export</h3><p class="use">Share or analyse results in a spreadsheet or another tool.</p><p class="outcome">CSV or JSON files that record where each dataset came from and when it was captured.</p></article>
+</div>
+<p class="more"><a href="install.html#first-use">Read the first-use guide</a></p>
+</section>
+
+<section id="privacy-control" class="section trust" aria-labelledby="trust-title">
+<h2 id="trust-title">You stay in control</h2>
+<ul class="checks">
+<li>You choose the websites. Bulk Fetch reads only the sites you add.</li>
+<li>Chrome asks for access to each site when it is needed, one site at a time, after you click. You can withdraw it in Chrome’s extension settings.</li>
+<li>Product datasets are stored in your browser, not in Fexlo’s account service.</li>
+<li>Account details (name, email, organisation and your sign-in) are sent to Supabase, our account service provider, so your account works.</li>
+<li>Fexlo respects robots.txt and stops when a site refuses access (403), asks it to slow down (429) or shows a bot check.</li>
+<li>Fexlo never solves CAPTCHAs and does not try to get past bot protection.</li>
 </ul>
-<div class="notice">Fexlo is not yet published in the Chrome Web Store. This page makes no claim of store approval.</div>
+<p class="more"><a href="privacy.html">Read the full privacy policy</a></p>
+</section>
+
+<section class="section band" aria-labelledby="sample-title">
+<div>
+<h2 id="sample-title">See it before you install</h2>
+<p>The sample preview shows the browse view, a batch plan, an example report and sample Insights. Every product and price in it is made up. It is not live inventory, and no website is contacted.</p>
+</div>
+<a class="btn ghost" href="sample.html">Open the sample</a>
+</section>
+
+<section class="section" aria-labelledby="compat-title">
+<h2 id="compat-title">Which sources work</h2>
+<p>Fexlo reads stores that publish a public Shopify-style product list, and product lists on the page you are viewing, on a best-effort basis. It does not work on every store or platform, and it does not claim compatibility with any specific store until that has been tested. Read <a href="compatibility.html">compatibility and limits</a> before relying on a result.</p>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+<h2 id="faq-title">Questions</h2>
+<details><summary>What does Fexlo collect?</summary><p>Your account details (name, email, an optional organisation, and the password you sign in with) are sent to our account service, Supabase. Product data, your website lists, filters and batches stay in your browser. The <a href="privacy.html">privacy policy</a> lists each item.</p></details>
+<details><summary>Which websites are supported?</summary><p>Stores that publish a public Shopify-style product list, and product lists on the page you are viewing, on a best-effort basis. Fexlo does not work on every store or platform. See <a href="compatibility.html">compatibility and limits</a>.</p></details>
+<details><summary>Where is product data stored?</summary><p>In your browser, in the extension’s own storage on your device. It is not uploaded to Fexlo’s account service. Remove the extension, or delete data in the Library, to remove it.</p></details>
+<details><summary>Why does Chrome ask for site access?</summary><p>Chrome requires permission before an extension can read a website. Fexlo asks for each website you add in Bulk Fetch, one at a time, after you click. You can withdraw access in Chrome’s extension settings.</p></details>
+<details><summary>What happens when a site blocks access?</summary><p>Fexlo marks that site as blocked when it refuses access (403), asks it to slow down (429) or shows a bot check. It stops reading that site, does not try to get past the block, and the other sites in the batch continue.</p></details>
+<details><summary>Can I export my data?</summary><p>Yes. Results and saved datasets can be exported as CSV or JSON. Each export records the source and capture time of the data.</p></details>
+<details><summary>Is Fexlo free?</summary><p>Fexlo is free during Early Access. Future pricing has not been announced, so this is not a promise that it will stay free.</p></details>
+<details><summary>Where can I get help?</summary><p>Read the <a href="install.html">install and help guide</a>, then contact support using the address on the <a href="support.html">support page</a>. Include the Fexlo version (Settings, then About) and what the screen said.</p></details>
+</section>
+
+<section class="final" aria-labelledby="final-title">
+<h2 id="final-title">Install Fexlo</h2>
+<p>Free during Early Access. Add it to Chrome from the Chrome Web Store.</p>
+<div class="cta-row"><span class="btn primary is-pending" aria-disabled="true">Add to Chrome</span></div>
+<p class="pending">The Chrome Web Store link is added once the official listing address is verified.</p>
+</section>
 </div></main>
-<footer class="site"><div class="wrap">Early Access · free for now · future pricing has not been announced · Made by Akhil Gupta</div></footer>
+<footer class="site-footer"><div class="wrap foot">
+<p class="foot-brand"><strong>Fexlo</strong> · Made by Akhil Gupta</p>
+<nav class="foot-nav" aria-label="Footer">
+<a href="install.html">Install &amp; help</a><a href="sample.html">Sample preview</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a>
+</nav>
+<p class="fine">Early Access · free for now · future pricing has not been announced. Support: <a href="mailto:akhil1998@gmail.com">akhil1998@gmail.com</a></p>
+</div></footer>
 
 </body>
 </html>
