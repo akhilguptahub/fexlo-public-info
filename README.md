@@ -1,4 +1,4 @@
-# Fexlo — public website
+# Fexlo public website
 
 This repository hosts the public website of **Fexlo**, a Chrome extension for collecting, comparing and exporting public product-catalogue data from websites you choose. It is published with GitHub Pages from the `main` branch.
 

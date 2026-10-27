@@ -12,13 +12,13 @@
 <meta property="og:url" content="https://akhilguptahub.github.io/fexlo-public-info/compatibility.html">
 <meta property="og:site_name" content="Fexlo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Compatibility and limits — Fexlo">
+<meta property="og:title" content="Compatibility and limits - Fexlo">
 <meta property="og:description" content="Which sources Fexlo can read, what it does not read, and its limits.">
 <meta property="og:image" content="https://akhilguptahub.github.io/fexlo-public-info/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/icon-128.png" type="image/png">
 <link rel="stylesheet" href="assets/site.css">
-<title>Compatibility and limits — Fexlo</title>
+<title>Compatibility and limits - Fexlo</title>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -28,13 +28,13 @@
 <a class="btn small" href="https://chromewebstore.google.com/detail/fexlo/kklmomfoohafpghcfpenhpkfamjjnphf" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
 </div></header>
 <main id="main"><div class="wrap">
-<article class="doc"><h1>What Fexlo works with — and what it does not</h1>
+<article class="doc"><h1>What Fexlo works with - and what it does not</h1>
 <p>Last reviewed against Fexlo 0.10.1.</p>
 <h2>Supported</h2>
 <div class="table-scroll"><table><thead><tr><th scope="col">Source</th><th scope="col">How Fexlo reads it</th><th scope="col">Notes</th></tr></thead><tbody><tr><td>Shopify-style stores with a public product list (<code>/products.json</code>)</td><td>Public catalogue files, paged, spaced requests, <code>robots.txt</code> respected, no cookies</td><td>Bulk Fetch and single-store extraction. Completeness is cross-checked against the sitemap when no filter is applied.</td></tr><tr><td>Web pages with repeated product cards or tables</td><td>Read from the tab you opened, after you click the toolbar button</td><td>Best effort, one page at a time. Accuracy depends on the page; Fexlo shows what it found and says when it is unsure.</td></tr></tbody></table></div>
 <h2>Not supported</h2>
 <p>Any website in Bulk Fetch that does not publish a public Shopify-style product list is shown as <em>Skipped: not a supported source</em>. Nothing is scraped from it.</p>
-<h2>What a store does not publish — and Fexlo therefore never invents</h2>
+<h2>What a store does not publish - and Fexlo therefore never invents</h2>
 <ul><li><strong>Currency.</strong> Catalogue files carry prices without a currency. Prices are shown as published; Insights compares them only as published and says so.</li><li><strong>Stock quantities, low-stock and pre-order.</strong> Only <em>available / not available</em> is published.</li><li><strong>Condition, storage, RAM.</strong> Used only when written in the title, options, tags or type. Otherwise &quot;unknown&quot;.</li></ul>
 <h2>Limits you should know</h2>
 <ul><li>Fexlo never solves CAPTCHAs, logs in, rotates addresses or hides itself. A refusing site is marked <em>Blocked</em>.</li><li>A capped, filtered or interrupted read is never treated as the store's full catalogue. A product is called removed only when both reads were complete with the same filter.</li><li>Cross-store matching is by exact brand + model + capacity + condition. Near matches are counted separately and never mixed into price statistics.</li><li>Data stays in your browser profile: no cloud sync; removing the extension removes local data.</li><li>Fexlo reads public pages only and cannot tell whether a particular use of a website's data is permitted. You are responsible for following each website's terms and the laws that apply to you.</li></ul>
